@@ -1,2 +1,2 @@
-# cs441_android-surface
-Android Surface Project
+# cs441_GraphingWidget
+Graphing Widget (Android Surface) Project
