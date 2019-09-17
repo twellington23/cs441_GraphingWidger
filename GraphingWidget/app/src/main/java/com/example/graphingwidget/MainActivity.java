@@ -3,7 +3,9 @@ package com.example.graphingwidget;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,8 +13,11 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+
+    public LineGraphSeries<DataPoint> interestGraph;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                chartGraph(view);
             }
         });
     }
@@ -51,5 +55,26 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void chartGraph(View view) {
+        EditText rate = findViewById(R.id.rate);
+        EditText amount = findViewById(R.id.amount);
+
+        double r, a, x, y;
+        r = Double.parseDouble(rate.getText().toString());
+        a = Double.parseDouble(amount.getText().toString());
+        x = 0;
+
+        GraphView graph = findViewById(R.id.graph);
+        interestGraph = new LineGraphSeries<>();
+
+        for(int i = 0; i < 100; i++) {
+            x += .1;
+            y = a * (1 + (r * x));
+            interestGraph.appendData(new DataPoint(x,y), true, 100);
+        }
+
+        graph.addSeries(interestGraph);
     }
 }
