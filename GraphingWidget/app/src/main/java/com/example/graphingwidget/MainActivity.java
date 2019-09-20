@@ -3,9 +3,9 @@ package com.example.graphingwidget;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.series.DataPoint;
-import com.jjoe64.graphview.series.LineGraphSeries;
+//import com.jjoe64.graphview.GraphView;
+//import com.jjoe64.graphview.series.DataPoint;
+//import com.jjoe64.graphview.series.LineGraphSeries;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,10 +14,12 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    public LineGraphSeries<DataPoint> interestGraph;
+    //public LineGraphSeries<DataPoint> interestGraph;
+    MySurface customSurface = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +28,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        customSurface = new MySurface(getApplicationContext());
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                chartGraph(view);
+                customSurface.drawGraph();
+                //chartGraph(view);
             }
         });
     }
@@ -56,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+    /*
     public void chartGraph(View view) {
         EditText rate = findViewById(R.id.rate);
         EditText amount = findViewById(R.id.amount);
@@ -77,4 +82,5 @@ public class MainActivity extends AppCompatActivity {
 
         graph.addSeries(interestGraph);
     }
+    */
 }

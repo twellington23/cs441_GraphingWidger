@@ -58,13 +58,29 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="LabelFor" />
 
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/graph"
+    <LinearLayout
+        android:id="@+id/customLayout"
         android:layout_width="410dp"
-        android:layout_height="590dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="585dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"/>
+
+    <!---
+    <com.example.graphingwidget.MySurface
+        android:id="@+id/customSurface"
+        android:layout_width="410dp"
+        android:layout_height="595dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="410dp"
+            android:layout_height="590dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
