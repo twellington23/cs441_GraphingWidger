@@ -1,0 +1,308 @@
+commit 1391e6dae00b20ab8a6bc4e81beb7b4adb0dbc3d
+Author: twellington23 <42653953+twellington23@users.noreply.github.com>
+Date:   Sun Sep 22 22:32:32 2019 -0400
+
+    Update README.md
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit cfca5e65efdd6c83630a4c3fb2bc3eb11d42cf22
+Author: twellington23 <42653953+twellington23@users.noreply.github.com>
+Date:   Sun Sep 22 22:32:05 2019 -0400
+
+    Update README.md
+
+ README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 26c46e380f20bbf336c7a99dac67e48b535518d2
+Author: Tyler Wellington <twellin1@binghamton.edu>
+Date:   Fri Sep 20 11:39:57 2019 -0400
+
+    worked on surfaceview
+
+ .../com/example/graphingwidget/MainActivity.java   | 18 ++++++---
+ .../java/com/example/graphingwidget/MySurface.java | 47 ++++++++++++++++++++++
+ .../app/src/main/res/layout/content_main.xml       | 24 +++++++++--
+ 3 files changed, 79 insertions(+), 10 deletions(-)
+
+commit 386008a142a6335c8d0dbd1fdee8f266f553752c
+Author: Tyler Wellington <twellin1@binghamton.edu>
+Date:   Tue Sep 17 16:02:48 2019 -0400
+
+    got graph to appear
+
+ GraphingWidget/app/build.gradle                    |  1 +
+ .../com/example/graphingwidget/MainActivity.java   | 31 +++++++++++++++++++---
+ .../app/src/main/res/layout/content_main.xml       | 26 ++++++++++++------
+ 3 files changed, 47 insertions(+), 11 deletions(-)
+
+commit fae03e30670c24918871d3d60602ef0b6473eed7
+Author: Tyler Wellington <twellin1@binghamton.edu>
+Date:   Mon Sep 16 09:43:49 2019 -0400
+
+    working on code
+
+ .../app/src/main/res/drawable-v24/timeline.png     | Bin 0 -> 187 bytes
+ .../app/src/main/res/layout/activity_main.xml      |   4 +-
+ .../app/src/main/res/layout/content_main.xml       |  48 +++++++++++++++++++--
+ GraphingWidget/app/src/main/res/values/strings.xml |   4 +-
+ 4 files changed, 49 insertions(+), 7 deletions(-)
+
+commit 51fb87621df5907e9ee34c0a71567027d846b7cf
+Author: Tyler Wellington <twellin1@binghamton.edu>
+Date:   Wed Sep 11 10:36:51 2019 -0400
+
+    added new project
+
+ GraphingWidget/.gitignore                          |  14 ++
+ GraphingWidget/.idea/codeStyles/Project.xml        | 116 ++++++++++++++
+ GraphingWidget/.idea/gradle.xml                    |  16 ++
+ GraphingWidget/.idea/misc.xml                      |   9 ++
+ GraphingWidget/.idea/runConfigurations.xml         |  12 ++
+ GraphingWidget/.idea/vcs.xml                       |   6 +
+ GraphingWidget/app/.gitignore                      |   1 +
+ GraphingWidget/app/build.gradle                    |  30 ++++
+ GraphingWidget/app/proguard-rules.pro              |  21 +++
+ .../graphingwidget/ExampleInstrumentedTest.java    |  27 ++++
+ GraphingWidget/app/src/main/AndroidManifest.xml    |  24 +++
+ .../com/example/graphingwidget/MainActivity.java   |  55 +++++++
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ++++
+ .../main/res/drawable/ic_launcher_background.xml   | 170 ++++++++++++++++++++
+ .../app/src/main/res/layout/activity_main.xml      |  33 ++++
+ .../app/src/main/res/layout/content_main.xml       |  20 +++
+ GraphingWidget/app/src/main/res/menu/menu_main.xml |  10 ++
+ .../src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 +
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 +
+ .../app/src/main/res/mipmap-hdpi/ic_launcher.png   | Bin 0 -> 2963 bytes
+ .../src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 0 -> 4905 bytes
+ .../app/src/main/res/mipmap-mdpi/ic_launcher.png   | Bin 0 -> 2060 bytes
+ .../src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 0 -> 2783 bytes
+ .../app/src/main/res/mipmap-xhdpi/ic_launcher.png  | Bin 0 -> 4490 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 0 -> 6895 bytes
+ .../app/src/main/res/mipmap-xxhdpi/ic_launcher.png | Bin 0 -> 6387 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 0 -> 10413 bytes
+ .../src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 0 -> 9128 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 0 -> 15132 bytes
+ GraphingWidget/app/src/main/res/values/colors.xml  |   6 +
+ GraphingWidget/app/src/main/res/values/dimens.xml  |   3 +
+ GraphingWidget/app/src/main/res/values/strings.xml |   4 +
+ GraphingWidget/app/src/main/res/values/styles.xml  |  20 +++
+ .../example/graphingwidget/ExampleUnitTest.java    |  17 ++
+ GraphingWidget/build.gradle                        |  27 ++++
+ GraphingWidget/gradle.properties                   |  20 +++
+ GraphingWidget/gradle/wrapper/gradle-wrapper.jar   | Bin 0 -> 54329 bytes
+ .../gradle/wrapper/gradle-wrapper.properties       |   6 +
+ GraphingWidget/gradlew                             | 172 +++++++++++++++++++++
+ GraphingWidget/gradlew.bat                         |  84 ++++++++++
+ GraphingWidget/settings.gradle                     |   2 +
+ 41 files changed, 969 insertions(+)
+
+commit 4834c0e539fa0299fc9a9b63f10347a7d41f4791
+Author: Tyler Wellington <twellin1@binghamton.edu>
+Date:   Wed Sep 11 10:35:29 2019 -0400
+
+    deleted broken project
+
+ GraphingWidget/.gitignore                          |  14 --
+ GraphingWidget/.idea/codeStyles/Project.xml        | 116 --------------
+ GraphingWidget/.idea/gradle.xml                    |  16 --
+ GraphingWidget/.idea/misc.xml                      |   9 --
+ GraphingWidget/.idea/runConfigurations.xml         |  12 --
+ GraphingWidget/.idea/vcs.xml                       |   6 -
+ GraphingWidget/app/.gitignore                      |   1 -
+ GraphingWidget/app/build.gradle                    |  30 ----
+ GraphingWidget/app/proguard-rules.pro              |  21 ---
+ .../graphingwidget/ExampleInstrumentedTest.java    |  27 ----
+ GraphingWidget/app/src/main/AndroidManifest.xml    |  24 ---
+ .../com/example/graphingwidget/MainActivity.java   |  55 -------
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ----
+ .../main/res/drawable/ic_launcher_background.xml   | 170 --------------------
+ .../app/src/main/res/layout/activity_main.xml      |  33 ----
+ .../app/src/main/res/layout/content_main.xml       |  20 ---
+ GraphingWidget/app/src/main/res/menu/menu_main.xml |  10 --
+ .../src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 -
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 -
+ .../app/src/main/res/mipmap-hdpi/ic_launcher.png   | Bin 2963 -> 0 bytes
+ .../src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 4905 -> 0 bytes
+ .../app/src/main/res/mipmap-mdpi/ic_launcher.png   | Bin 2060 -> 0 bytes
+ .../src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 2783 -> 0 bytes
+ .../app/src/main/res/mipmap-xhdpi/ic_launcher.png  | Bin 4490 -> 0 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 6895 -> 0 bytes
+ .../app/src/main/res/mipmap-xxhdpi/ic_launcher.png | Bin 6387 -> 0 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 10413 -> 0 bytes
+ .../src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 9128 -> 0 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 15132 -> 0 bytes
+ GraphingWidget/app/src/main/res/values/colors.xml  |   6 -
+ GraphingWidget/app/src/main/res/values/dimens.xml  |   3 -
+ GraphingWidget/app/src/main/res/values/strings.xml |   4 -
+ GraphingWidget/app/src/main/res/values/styles.xml  |  20 ---
+ .../example/graphingwidget/ExampleUnitTest.java    |  17 --
+ GraphingWidget/build.gradle                        |  27 ----
+ GraphingWidget/gradle.properties                   |  20 ---
+ GraphingWidget/gradle/wrapper/gradle-wrapper.jar   | Bin 54329 -> 0 bytes
+ .../gradle/wrapper/gradle-wrapper.properties       |   6 -
+ GraphingWidget/gradlew                             | 172 ---------------------
+ GraphingWidget/gradlew.bat                         |  84 ----------
+ GraphingWidget/settings.gradle                     |   2 -
+ 41 files changed, 969 deletions(-)
+
+commit 40f164e6bbb2728ed91b5009583422b5abbb425a
+Author: Tyler Wellington <twellin1@binghamton.edu>
+Date:   Wed Sep 11 10:18:06 2019 -0400
+
+    added new project
+
+ GraphingWidget/.gitignore                          |  14 ++
+ GraphingWidget/.idea/codeStyles/Project.xml        | 116 ++++++++++++++
+ GraphingWidget/.idea/gradle.xml                    |  16 ++
+ GraphingWidget/.idea/misc.xml                      |   9 ++
+ GraphingWidget/.idea/runConfigurations.xml         |  12 ++
+ GraphingWidget/.idea/vcs.xml                       |   6 +
+ GraphingWidget/app/.gitignore                      |   1 +
+ GraphingWidget/app/build.gradle                    |  30 ++++
+ GraphingWidget/app/proguard-rules.pro              |  21 +++
+ .../graphingwidget/ExampleInstrumentedTest.java    |  27 ++++
+ GraphingWidget/app/src/main/AndroidManifest.xml    |  24 +++
+ .../com/example/graphingwidget/MainActivity.java   |  55 +++++++
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ++++
+ .../main/res/drawable/ic_launcher_background.xml   | 170 ++++++++++++++++++++
+ .../app/src/main/res/layout/activity_main.xml      |  33 ++++
+ .../app/src/main/res/layout/content_main.xml       |  20 +++
+ GraphingWidget/app/src/main/res/menu/menu_main.xml |  10 ++
+ .../src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 +
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 +
+ .../app/src/main/res/mipmap-hdpi/ic_launcher.png   | Bin 0 -> 2963 bytes
+ .../src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 0 -> 4905 bytes
+ .../app/src/main/res/mipmap-mdpi/ic_launcher.png   | Bin 0 -> 2060 bytes
+ .../src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 0 -> 2783 bytes
+ .../app/src/main/res/mipmap-xhdpi/ic_launcher.png  | Bin 0 -> 4490 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 0 -> 6895 bytes
+ .../app/src/main/res/mipmap-xxhdpi/ic_launcher.png | Bin 0 -> 6387 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 0 -> 10413 bytes
+ .../src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 0 -> 9128 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 0 -> 15132 bytes
+ GraphingWidget/app/src/main/res/values/colors.xml  |   6 +
+ GraphingWidget/app/src/main/res/values/dimens.xml  |   3 +
+ GraphingWidget/app/src/main/res/values/strings.xml |   4 +
+ GraphingWidget/app/src/main/res/values/styles.xml  |  20 +++
+ .../example/graphingwidget/ExampleUnitTest.java    |  17 ++
+ GraphingWidget/build.gradle                        |  27 ++++
+ GraphingWidget/gradle.properties                   |  20 +++
+ GraphingWidget/gradle/wrapper/gradle-wrapper.jar   | Bin 0 -> 54329 bytes
+ .../gradle/wrapper/gradle-wrapper.properties       |   6 +
+ GraphingWidget/gradlew                             | 172 +++++++++++++++++++++
+ GraphingWidget/gradlew.bat                         |  84 ++++++++++
+ GraphingWidget/settings.gradle                     |   2 +
+ 41 files changed, 969 insertions(+)
+
+commit 83355c48a6c5026922588deb1606936ce7354df4
+Author: Tyler Wellington <twellin1@binghamton.edu>
+Date:   Wed Sep 11 10:16:01 2019 -0400
+
+    removed project
+
+ GraphingWidget/.gitignore                          |  14 --
+ GraphingWidget/.idea/codeStyles/Project.xml        | 116 --------------
+ GraphingWidget/.idea/gradle.xml                    |  16 --
+ GraphingWidget/.idea/misc.xml                      |   9 --
+ GraphingWidget/.idea/runConfigurations.xml         |  12 --
+ GraphingWidget/.idea/vcs.xml                       |   6 -
+ GraphingWidget/app/.gitignore                      |   1 -
+ GraphingWidget/app/build.gradle                    |  29 ----
+ GraphingWidget/app/proguard-rules.pro              |  21 ---
+ .../graphingwidget/ExampleInstrumentedTest.java    |  27 ----
+ GraphingWidget/app/src/main/AndroidManifest.xml    |  21 ---
+ .../com/example/graphingwidget/MainActivity.java   |  14 --
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ----
+ .../main/res/drawable/ic_launcher_background.xml   | 170 --------------------
+ .../app/src/main/res/layout/activity_main.xml      |  18 ---
+ .../src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 -
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 -
+ .../app/src/main/res/mipmap-hdpi/ic_launcher.png   | Bin 2963 -> 0 bytes
+ .../src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 4905 -> 0 bytes
+ .../app/src/main/res/mipmap-mdpi/ic_launcher.png   | Bin 2060 -> 0 bytes
+ .../src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 2783 -> 0 bytes
+ .../app/src/main/res/mipmap-xhdpi/ic_launcher.png  | Bin 4490 -> 0 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 6895 -> 0 bytes
+ .../app/src/main/res/mipmap-xxhdpi/ic_launcher.png | Bin 6387 -> 0 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 10413 -> 0 bytes
+ .../src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 9128 -> 0 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 15132 -> 0 bytes
+ GraphingWidget/app/src/main/res/values/colors.xml  |   6 -
+ GraphingWidget/app/src/main/res/values/strings.xml |   3 -
+ GraphingWidget/app/src/main/res/values/styles.xml  |  11 --
+ .../example/graphingwidget/ExampleUnitTest.java    |  17 --
+ GraphingWidget/build.gradle                        |  27 ----
+ GraphingWidget/gradle.properties                   |  20 ---
+ GraphingWidget/gradle/wrapper/gradle-wrapper.jar   | Bin 54329 -> 0 bytes
+ .../gradle/wrapper/gradle-wrapper.properties       |   6 -
+ GraphingWidget/gradlew                             | 172 ---------------------
+ GraphingWidget/gradlew.bat                         |  84 ----------
+ GraphingWidget/settings.gradle                     |   2 -
+ 38 files changed, 866 deletions(-)
+
+commit 73e8b1ad1127353d1928a783e066c22e20e242c2
+Author: Tyler Wellington <twellin1@binghamton.edu>
+Date:   Wed Sep 11 09:48:30 2019 -0400
+
+    added Graphing Widget project
+
+ GraphingWidget/.gitignore                          |  14 ++
+ GraphingWidget/.idea/codeStyles/Project.xml        | 116 ++++++++++++++
+ GraphingWidget/.idea/gradle.xml                    |  16 ++
+ GraphingWidget/.idea/misc.xml                      |   9 ++
+ GraphingWidget/.idea/runConfigurations.xml         |  12 ++
+ GraphingWidget/.idea/vcs.xml                       |   6 +
+ GraphingWidget/app/.gitignore                      |   1 +
+ GraphingWidget/app/build.gradle                    |  29 ++++
+ GraphingWidget/app/proguard-rules.pro              |  21 +++
+ .../graphingwidget/ExampleInstrumentedTest.java    |  27 ++++
+ GraphingWidget/app/src/main/AndroidManifest.xml    |  21 +++
+ .../com/example/graphingwidget/MainActivity.java   |  14 ++
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ++++
+ .../main/res/drawable/ic_launcher_background.xml   | 170 ++++++++++++++++++++
+ .../app/src/main/res/layout/activity_main.xml      |  18 +++
+ .../src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 +
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 +
+ .../app/src/main/res/mipmap-hdpi/ic_launcher.png   | Bin 0 -> 2963 bytes
+ .../src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 0 -> 4905 bytes
+ .../app/src/main/res/mipmap-mdpi/ic_launcher.png   | Bin 0 -> 2060 bytes
+ .../src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 0 -> 2783 bytes
+ .../app/src/main/res/mipmap-xhdpi/ic_launcher.png  | Bin 0 -> 4490 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 0 -> 6895 bytes
+ .../app/src/main/res/mipmap-xxhdpi/ic_launcher.png | Bin 0 -> 6387 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 0 -> 10413 bytes
+ .../src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 0 -> 9128 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 0 -> 15132 bytes
+ GraphingWidget/app/src/main/res/values/colors.xml  |   6 +
+ GraphingWidget/app/src/main/res/values/strings.xml |   3 +
+ GraphingWidget/app/src/main/res/values/styles.xml  |  11 ++
+ .../example/graphingwidget/ExampleUnitTest.java    |  17 ++
+ GraphingWidget/build.gradle                        |  27 ++++
+ GraphingWidget/gradle.properties                   |  20 +++
+ GraphingWidget/gradle/wrapper/gradle-wrapper.jar   | Bin 0 -> 54329 bytes
+ .../gradle/wrapper/gradle-wrapper.properties       |   6 +
+ GraphingWidget/gradlew                             | 172 +++++++++++++++++++++
+ GraphingWidget/gradlew.bat                         |  84 ++++++++++
+ GraphingWidget/settings.gradle                     |   2 +
+ 38 files changed, 866 insertions(+)
+
+commit 08e6d5c105bdc2e5e106a6b362f37334cd5a1c95
+Author: twellington23 <42653953+twellington23@users.noreply.github.com>
+Date:   Mon Sep 9 10:40:11 2019 -0400
+
+    Update README.md
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 596c7562a95bcc535ae1b37454822bce7b30cb42
+Author: twellington23 <42653953+twellington23@users.noreply.github.com>
+Date:   Mon Sep 9 10:11:48 2019 -0400
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)

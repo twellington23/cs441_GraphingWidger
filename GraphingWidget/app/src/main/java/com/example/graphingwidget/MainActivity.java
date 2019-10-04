@@ -3,9 +3,6 @@ package com.example.graphingwidget;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-//import com.jjoe64.graphview.GraphView;
-//import com.jjoe64.graphview.series.DataPoint;
-//import com.jjoe64.graphview.series.LineGraphSeries;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -15,27 +12,38 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    //public LineGraphSeries<DataPoint> interestGraph;
+    LinearLayout customLayout = null;
     MySurface customSurface = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        customLayout = findViewById(R.id.customLayout);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         customSurface = new MySurface(getApplicationContext());
+        customLayout.addView(customSurface);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                customSurface.drawGraph();
+                //customSurface.drawGraph();
+                chartGraph(view);
+            }
+        });
+
+        customSurface.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 //chartGraph(view);
+                customSurface.drawGraph();
             }
         });
     }
@@ -61,26 +69,10 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    /*
+
     public void chartGraph(View view) {
         EditText rate = findViewById(R.id.rate);
-        EditText amount = findViewById(R.id.amount);
-
-        double r, a, x, y;
-        r = Double.parseDouble(rate.getText().toString());
-        a = Double.parseDouble(amount.getText().toString());
-        x = 0;
-
-        GraphView graph = findViewById(R.id.graph);
-        interestGraph = new LineGraphSeries<>();
-
-        for(int i = 0; i < 100; i++) {
-            x += .1;
-            y = a * (1 + (r * x));
-            interestGraph.appendData(new DataPoint(x,y), true, 100);
-        }
-
-        graph.addSeries(interestGraph);
+        int r = Integer.valueOf(rate.getText().toString());
+        customSurface.chartLine(r);
     }
-    */
 }
